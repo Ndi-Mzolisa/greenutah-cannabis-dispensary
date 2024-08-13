@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App-logo {
@@ -28,6 +30,43 @@
   color: #61dafb;
 }
 
+.nav {
+  margin: 0;
+  padding: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgb(223, 255, 243);
+  z-index: 100;
+  display: flex;
+  column-gap: 45rem;
+}
+
+.nav-item-container {
+  display:  flex;
+  justify-content: space-evenly;
+}
+
+.nav-img {
+  width: 90px;
+  height: 120px;
+  background-color: brown;
+}
+
+.nav-item {
+  color: #333;
+  display: inline;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 4rem;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: rgb(145, 39, 39);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +74,173 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/*++++++++++++++++++++HOME PAGE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++**/
+section{
+  border-bottom:  3px solid black;
+}
+
+#hero {
+  padding: 12rem 0;
+  margin-top: 10rem;
+}
+
+#hero h1 {
+  font-size: 8rem;
+  text-align: left;
+  padding: 0 12rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+#hero-container {
+  display: flex;
+  column-gap: 6rem;
+  padding: 4rem 12rem 4rem 12rem;
+}
+
+#hero-left {
+  text-align: left;
+  width: 66.666666%;
+}
+
+#hero-left button,
+#favourites-carousel button {
+  margin-top: 4rem;
+  padding: 2rem 6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
+  background-color: aquamarine;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#hero-left button:hover,
+#favourites-carousel button:hover{
+  color: #f1f1f1;
+  background-color: crimson;
+  border: 1px solid crimson;
+}
+
+#hero-right {
+  width: 33.333333%;
+  background-color: brown;
+}
+
+#hero-left p,
+#hero-left span{
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+#favourites-carousel {
+  padding: 4rem 0;
+  background-color: #241515;
+  border-left: 9px solid #241515;
+  border-right: 9px solid #241515;
+  margin: 0;
+}
+
+marquee div {
+  display: flex;
+  padding: 2rem 3rem;
+  width: fit-content;
+  column-gap: 9rem;
+}
+
+#favourites-carousel h2 {
+  font-size: 4rem;
+  color: #f1f1f1;
+  padding-bottom: 4rem;
+}
+
+#favourites-carousel marquee {
+  background-color: #f1f1f1;
+  padding: 2rem 0;
+  border-radius: 4px;
+}
+
+#favourites-carousel article{
+  background-color: transparent;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid crimson;
+  border-bottom: 1px solid crimson;
+  border-radius: 0.2rem;
+  z-index: 0;
+}
+
+#favourites-carousel article img {
+  background-color: brown;
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+}
+
+#favourites-carousel button {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+#specials-banner {
+  background-color: teal;
+  padding: 18rem 6rem;
+  color: #f1f1f1;
+}
+
+#specials-banner h4{
+  font-size: 8rem;
+  margin: 0;
+  padding: 2rem;
+}
+
+#specials-banner h3{
+  font-size: 6rem;
+  margin: 0;
+  padding: 2rem;
+
+}
+
+#specials-banner h2{
+  font-size: 10rem;
+  margin: 0;
+  padding: 2rem;
+}
+
+#specials-banner span{
+  text-transform: uppercase;
+  color: crimson;
+}
+
+#specials-banner em{
+  color: crimson;
+}
+
+#specials-banner button{
+  margin-top: 4rem;
+  padding: 2rem 6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
+  background-color: aquamarine;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+#specials-banner button:hover{
+  color: #f1f1f1;
+  background-color: crimson;
+  border: 1px solid crimson;
 }
